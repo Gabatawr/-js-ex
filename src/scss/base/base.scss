@@ -1,0 +1,49 @@
+@use 'normalize.css/normalize';
+@use './helpers/variables' as var;
+@use './helpers/mixins' as mix;
+
+// .btn {
+//   @include mix.focus-visible {
+//     box-shadow: none;
+//   }
+// }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  height: 100%;
+
+  font-size: 16px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+
+  min-height: 100%;
+
+  font-family: var.$font-family-primary;
+}
+
+a:visited {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+
+  vertical-align: middle;
+}
+
+@each $heading, $font-size in var.$font-size-headings {
+  #{$heading} {
+    font-size: $font-size;
+    font-family: var.$font-family-secondary;
+  }
+}

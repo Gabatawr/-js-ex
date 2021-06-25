@@ -1,0 +1,5 @@
+@use './generated/smartgrid' as grid;
+
+.container {
+  @include grid.wrapper;
+}

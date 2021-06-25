@@ -1,0 +1,12 @@
+@use 'generated/smartgrid' as grid;
+@use 'helpers/variables' as var;
+@use 'helpers/functions' as fun;
+@use 'helpers/mixins' as mix;
+@use 'base/base' as *;
+@use 'layout';
+@use 'components';
+@use 'hw/base';
+
+.wrapper {
+  @include grid.wrapper;
+}

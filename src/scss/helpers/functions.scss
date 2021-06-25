@@ -1,0 +1,9 @@
+@use './helpers/variables' as var;
+
+@function get-theme-color($key) {
+  @return map-get(var.$theme-colors, $key);
+}
+
+@function get-spacer($key) {
+  @return map-get(var.$spacers, $key);
+}

@@ -1,0 +1,6 @@
+- const preUrl = isProd ? `/${repName}` : '.'
+
+mixin link(href, title)
+  a(class='link', href=preUrl+href)&attributes(attributes)= title
+    if block
+      block

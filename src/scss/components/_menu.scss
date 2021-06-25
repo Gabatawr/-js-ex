@@ -1,0 +1,35 @@
+// menu
+
+.menu {
+  &__list {
+    display: flex;
+    justify-content: space-around;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  &__item {
+    flex-grow: 1;
+
+    padding: 8px;
+
+    text-align: center;
+
+    background-color: black;
+  }
+
+  &__link,
+  &__link:visited {
+    color: white;
+    text-decoration: none;
+  }
+
+  &__link:hover,
+  &__link--active,
+  &__link--active:visited {
+    color: orangered;
+  }
+}
