@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="description">
+    <title>Books — Homework</title>
+    <link rel="stylesheet" href="css/main.min.css?v=0.0.0.0">
+  </head>
+  <body class="container books">
+    <header class="header">
+      <div class="header__top-wrapper"><a class="link header__logo" href="./index.html">library</a>
+        <form class="form-search">
+          <input class="form-search__textbox" type="text" placeholder="search">
+          <button class="btn form-search__btn" type="button"></button>
+        </form>
+      </div>
+      <nav class="header__menu, menu">
+        <ul class="menu__list">
+          <li class="menu__item"><a class="link menu__link" href="./index.html">Books</a>
+          </li>
+          <li class="menu__item"><a class="link menu__link" href=".#">Visitors</a>
+          </li>
+          <li class="menu__item"><a class="link menu__link" href=".#">Cards</a>
+          </li>
+          <li class="menu__item"><a class="link menu__link" href=".#">Statistics</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <header class="books__header">
+        <button class="btn books_btn" type="button"></button>
+      </header>
+      <table class="books__table">
+        <thead>
+          <tr>
+            <th scope="col">id</th>
+            <th scope="col">Title</th>
+            <th scope="col">Author</th>
+            <th scope="col">Year</th>
+            <th scope="col">Publisher</th>
+            <th scope="col">Pages</th>
+            <th scope="col">Count</th>
+          </tr>
+        </thead>
+        <tbody>
+          <template class="table__row-template">
+            <tr>
+              <th>1</th>
+              <th>Book</th>
+              <th>Auth</th>
+              <th>1994</th>
+              <th>Unknown</th>
+              <th>124</th>
+              <th>2</th>
+            </tr>
+          </template>
+          <tr>
+            <th>1</th>
+            <th>Book</th>
+            <th>Auth</th>
+            <th>1994</th>
+            <th>Unknown</th>
+            <th>124</th>
+            <th>2</th>
+          </tr>
+          <tr>
+            <th>1</th>
+            <th>Book</th>
+            <th>Auth</th>
+            <th>1994</th>
+            <th>Unknown</th>
+            <th>124</th>
+            <th>2</th>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <script src="js/main.min.js?v=0.0.0.0"></script>
+  </body>
+</html>

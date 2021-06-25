@@ -1,3 +1,4 @@
+import 'focus-visible';
 import documentReady from './helpers/documentReady';
 
 // #region linkActive
@@ -7,7 +8,7 @@ documentReady(() => {
     .querySelectorAll('.menu__link')
     .forEach((link) => {
       if (window.location.href === link.href) {
-        link.classList.add('menu__link--active');
+        link.parentNode.classList.add('menu__item--active');
       }
     });
 });

@@ -10,14 +10,14 @@
 
 @mixin focus-visible {
   @if (&) {
-    .js-focus-visible &:focus:not(.focus-visible) {
+    [data-js-focus-visible] &:focus:not([data-focus-visible-added]) {
       @content;
     }
   }
 
   @else {
-    .js-focus-visible :focus:not(.focus-visible) {
-      outline: none;
+    [data-js-focus-visible] :focus:not([data-focus-visible-added]) {
+      box-shadow: none;
     }
   }
 }

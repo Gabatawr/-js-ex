@@ -1,1 +1,19 @@
-header header
+- const block = 'menu'
+
+header.header
+  .header__top-wrapper
+    +link('/index.html', 'library')(class='header__logo')
+    form.form-search
+      input.form-search__textbox(type='text', placeholder='search')
+      button.btn.form-search__btn(type='button')
+
+  nav(class=`header__menu, ${block}`)
+    ul(class=`${block}__list`)
+      li(class=`${block}__item`)
+        +link('/index.html', 'Books')(class=`${block}__link`)
+      li(class=`${block}__item`)
+        +link('#', 'Visitors')(class=`${block}__link`)
+      li(class=`${block}__item`)
+        +link('#', 'Cards')(class=`${block}__link`)
+      li(class=`${block}__item`)
+        +link('#', 'Statistics')(class=`${block}__link`)

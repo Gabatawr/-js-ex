@@ -1,9 +1,10 @@
 // menu
 
 .menu {
+  margin-top: 32px;
+
   &__list {
     display: flex;
-    justify-content: space-around;
 
     margin: 0;
     padding: 0;
@@ -14,22 +15,31 @@
   &__item {
     flex-grow: 1;
 
-    padding: 8px;
+    padding: 12px;
 
+    font-size: 24px;
     text-align: center;
 
-    background-color: black;
+    background-color: #f4fff4;
+
+    &:first-child {
+      border-radius: 26px 0 0 26px;
+    }
+
+    &:last-child {
+      border-radius: 0 26px 26px 0;
+    }
   }
 
   &__link,
   &__link:visited {
-    color: white;
+    color: #5d5076;
     text-decoration: none;
   }
 
-  &__link:hover,
-  &__link--active,
-  &__link--active:visited {
-    color: orangered;
+  &__item:hover,
+  &__item--active {
+    border-bottom: solid 3px #f4696b;
+    cursor: pointer;
   }
 }

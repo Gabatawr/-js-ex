@@ -8,15 +8,12 @@ html(lang='ru')
   head
     include ../parts/head.pug
 
-  body(class= bodyClass)
+  body.container(class= bodyClass)
     block header
       include ../parts/header.pug
 
-    main.main.wrapper
+    main.main
       block content
-
-    block footer
-      include ../parts/footer.pug
 
     block scripts
       script(src='js/main.min.js?v=' + siteVersion)

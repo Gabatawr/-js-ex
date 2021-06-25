@@ -2,12 +2,6 @@
 @use './helpers/variables' as var;
 @use './helpers/mixins' as mix;
 
-// .btn {
-//   @include mix.focus-visible {
-//     box-shadow: none;
-//   }
-// }
-
 *,
 *::before,
 *::after {
@@ -46,4 +40,13 @@ img {
     font-size: $font-size;
     font-family: var.$font-family-secondary;
   }
+}
+
+[data-js-focus-visible] [data-focus-visible-added] {
+  outline: none;
+  box-shadow: 0 0 0 2px rgb(150, 70, 255) inset;
+}
+
+[data-js-focus-visible] :focus:not([data-focus-visible-added]) {
+  box-shadow: none;
 }
