@@ -33,7 +33,7 @@
   "license": "WTFPL",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Gabatawr/-js-hw.git"
+    "url": "https://github.com/Gabatawr/-js-ex.git"
   },
   "devDependencies": {
     "@babel/core": "^7.14.3",

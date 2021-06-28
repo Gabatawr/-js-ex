@@ -144,6 +144,9 @@ svg {
 
     tbody {
       tr {
+
+        border-radius: 12px;
+
         &:hover,
         &.row-selected {
           background-color: #101233;
