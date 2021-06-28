@@ -41,10 +41,12 @@
     "@babel/preset-env": "^7.14.4",
     "@babel/register": "^7.13.16",
     "@zoxon/emitty": "^1.4.2",
+    "babel-plugin-transform-inline-environment-variables": "^0.4.3",
     "babelify": "^10.0.0",
     "browser-sync": "^2.26.14",
     "browserify": "^17.0.0",
     "del": "^6.0.0",
+    "envify": "^4.1.0",
     "eslint": "^7.28.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.23.4",
@@ -79,6 +81,8 @@
   },
   "dependencies": {
     "focus-visible": "^5.2.0",
+    "google-auth-library": "^7.1.2",
+    "google-spreadsheet": "^3.1.15",
     "lorem-ipsum": "^2.0.3",
     "normalize.css": "^8.0.1",
     "vanilla-lazyload": "^17.4.0"

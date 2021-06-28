@@ -31,6 +31,10 @@ html {
   &:active {
     background-color: #9da2ff;
   }
+
+  &:disabled {
+    opacity: 0.33;
+  }
 }
 
 .header {
@@ -51,33 +55,40 @@ html {
     text-transform: uppercase;
     text-decoration: none;
   }
+}
 
-  .form-search {
-    position: relative;
+svg {
+  width: 12px;
+  height: 12px;
+}
 
-    display: flex;
-    align-items: center;
+.form-search {
+  position: relative;
 
-    &__textbox {
-      width: 250px;
-      height: 32px;
+  display: flex;
+  align-items: center;
 
-      padding-left: 12px;
+  &__textbox {
+    width: 250px;
+    height: 32px;
 
-      background-color: #f4fff4;
+    padding-left: 12px;
 
-      border-style: none;
-      border-radius: 16px;
-    }
+    background-color: #f4fff4;
 
-    &__btn {
-      position: absolute;
-      right: 6px;
+    border-style: none;
+    border-radius: 16px;
+  }
 
-      z-index: 1;
+  &__btn {
+    position: absolute;
+    right: 6px;
 
-      border: 1px solid rgb(150, 70, 255);
-    }
+    border: 1px solid rgb(150, 70, 255);
+  }
+
+  .icon-search {
+    fill: rgb(107, 36, 121);
   }
 }
 
@@ -88,8 +99,33 @@ html {
   &__header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 12px;
+    margin-bottom: 12px;
+
+    .btn {
+      margin: 0 3px;
+      padding: 0 1px 0 1px;
+
+      color: #26980a;
+      font-size: 21px;
+
+      &:hover {
+        background-color: #cbd5ff;
+      }
+
+      &:active {
+        background-color: #c6b6ff;
+      }
+    }
+  }
+
+  .icon-edit {
+    fill: rgb(89, 70, 255);
+  }
+
+  .icon-del {
+    fill: #f4696b;
   }
 
   &__table {
@@ -104,6 +140,15 @@ html {
 
       border: 1px solid #f4696b;
       border-top: none;
+    }
+
+    tbody {
+      tr {
+        &:hover,
+        &.row-selected {
+          background-color: #101233;
+        }
+      }
     }
 
     thead {

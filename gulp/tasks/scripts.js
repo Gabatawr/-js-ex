@@ -1,15 +1,18 @@
 import gulp from 'gulp';
 import browserify from 'browserify';
+import envify from 'envify/custom';
 import source from 'vinyl-source-stream';
 import buffer from 'vinyl-buffer';
 import sourcemaps from 'gulp-sourcemaps';
 import uglify from 'gulp-uglify';
 import gulpif from 'gulp-if';
 import config from '../config';
+import api from '../../api';
 
 export const scriptsBuild = () => (
   browserify(`${config.src.js}/main.js`, { debug: true })
     .transform('babelify', { presets: ['@babel/preset-env'] })
+    .transform(envify(api))
     .bundle()
     .on('error', function browserifyError(error) {
       console.log(error.stack);

@@ -1,5 +1,9 @@
 header.books__header
-  button.btn.books_btn(type='button')
+  button.btn.books__btn-add(type='button') +
+  button.btn.books__btn-edit(type='button', disabled)
+    +icon-mono('edit')
+  button.btn.books__btn-del(type='button', disabled)
+    +icon-mono('del')
 
 table.books__table
   thead
@@ -12,28 +16,3 @@ table.books__table
       th(scope='col') Pages
       th(scope='col') Count
   tbody
-    template.table__row-template
-      tr
-        th 1
-        th Book
-        th Auth
-        th 1994
-        th Unknown
-        th 124
-        th 2
-    tr
-      th 1
-      th Book
-      th Auth
-      th 1994
-      th Unknown
-      th 124
-      th 2
-    tr
-      th 1
-      th Book
-      th Auth
-      th 1994
-      th Unknown
-      th 124
-      th 2
